@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="name"
+            type="String" />
+        <variable
+            name="rollNo"
+            type="Integer" />
+
+        <variable
+            name="fragment"
+            type="com.o7services.revisionclass6m.SharedPrefsFragment" />
+    </data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin_10dp"
+    tools:context=".SharedPrefsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size_30sp"
+        android:textStyle="bold|italic"
+        android:text="@string/enter_your_name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etName"
+        android:text="@{name}"
+        android:hint="@string/enter_your_name"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/textHeadingStyle"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:text="@string/enter_your_roll_no"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etRollNo"
+        android:text="@{String.valueOf(rollNo)}"
+        android:inputType="number"
+        android:hint="@string/enter_your_name"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSave"
+        android:layout_marginVertical="@dimen/margin_10dp"
+        android:text="@string/save"/>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:flexWrap="wrap"
+        app:alignItems="stretch"
+        app:alignContent="stretch" >
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRed"
+        android:onClick="@{()->fragment.onClick(1)}"
+        android:text="@string/red"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBlue"
+        android:onClick="@{()->fragment.onClick(2)}"
+        android:text="@string/blue"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGreen"
+        android:onClick="@{()->fragment.onClick(3)}"
+        android:text="@string/green"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnOrange"
+        android:onClick="@{()->fragment.onClick(4)}"
+        android:text="@string/orange"/>
+
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+</LinearLayout>
+
+</layout>

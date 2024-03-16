@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RevisionClass6M" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimaryContainer">@color/blue</item> <!-- floating action button background-->
+        <item name="colorOnPrimaryContainer">@color/black</item> <!-- Color that will for icon on the floating action button-->
+        <item name="colorSecondaryContainer">@color/white</item> <!-- Color that will be on the bottom navigation highlight-->
+        <item name="colorOnSecondaryContainer">@color/blue</item> <!-- Color that will be on the bottom navigation higlighted item-->
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorPrimary">@color/blue</item> <!-- used for status bar, buttons-->
+        <item name="colorOnPrimary">@color/white</item> <!-- used for text used on primary color like button-->
+    </style>
+
+    <style name="Theme.RevisionClass6M" parent="Base.Theme.RevisionClass6M" />
+
+    <style name="textHeadingStyle" parent="">
+        <item name="android:textSize">@dimen/size_30sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

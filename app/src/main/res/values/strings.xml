@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RevisionClass6M</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_your_roll_no">Enter your roll no</string>
+    <string name="save">Save</string>
+    <string name="red">Red</string>
+    <string name="blue">Blue</string>
+    <string name="green">Green</string>
+    <string name="orange">Orange</string>
+    <string name="change_fragment_text">Change Fragment Text</string>
+</resources>
